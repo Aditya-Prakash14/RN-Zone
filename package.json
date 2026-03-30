@@ -3,7 +3,7 @@
   "displayName": "React Native Manager",
   "description": "Full-featured React Native project manager with Expo/CLI scaffolding, UI library setup, script runner, and component generator",
   "version": "0.1.0",
-  "publisher": "aditya-prakash",
+  "publisher": "AdityaDevExtensions",
   "license": "MIT",
   "engines": {
     "vscode": "^1.85.0"
