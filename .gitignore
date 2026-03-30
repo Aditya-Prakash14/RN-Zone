@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.npm
+*.tgz
+
+# Production
+/out/
+*.vsix
+
+# Testing
+.vscode-test/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.js.map
