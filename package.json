@@ -5,20 +5,36 @@
   "version": "0.1.0",
   "publisher": "aditya-prakash",
   "license": "MIT",
-  "engines": { "vscode": "^1.85.0" },
-  "categories": ["Other", "Snippets", "Extension Packs"],
-  "keywords": ["react-native", "expo", "mobile", "ui-library", "scaffold", "generator", "setup"],
-  "activationEvents": ["onStartupFinished"],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets",
+    "Extension Packs"
+  ],
+  "keywords": [
+    "react-native",
+    "expo",
+    "mobile",
+    "ui-library",
+    "scaffold",
+    "generator",
+    "setup"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "icon": "resources/rn-icon.svg",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/react-native-manager-vscode"
+    "url": "https://github.com/Aditya-Prakash14/-RN-Zone"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/react-native-manager-vscode/issues"
+    "url": "https://github.com/Aditya-Prakash14/-RN-Zone/issues"
   },
-  "homepage": "https://github.com/yourusername/react-native-manager-vscode#readme",
+  "homepage": "https://github.com/Aditya-Prakash14/-RN-Zone#readme",
   "contributes": {
     "viewsContainers": {
       "activitybar": [
@@ -31,16 +47,38 @@
     },
     "views": {
       "rnManager": [
-        { "type": "webview", "id": "rnManager.dashboard", "name": "Dashboard" }
+        {
+          "type": "webview",
+          "id": "rnManager.dashboard",
+          "name": "Dashboard"
+        }
       ]
     },
     "commands": [
-      { "command": "rnManager.createProject",     "title": "RN: Create New Project" },
-      { "command": "rnManager.installUILibrary",   "title": "RN: Install UI Library" },
-      { "command": "rnManager.runScript",          "title": "RN: Run Script" },
-      { "command": "rnManager.generateComponent",  "title": "RN: Generate Component" },
-      { "command": "rnManager.generateScreen",     "title": "RN: Generate Screen" },
-      { "command": "rnManager.openDashboard",      "title": "RN: Open Dashboard" }
+      {
+        "command": "rnManager.createProject",
+        "title": "RN: Create New Project"
+      },
+      {
+        "command": "rnManager.installUILibrary",
+        "title": "RN: Install UI Library"
+      },
+      {
+        "command": "rnManager.runScript",
+        "title": "RN: Run Script"
+      },
+      {
+        "command": "rnManager.generateComponent",
+        "title": "RN: Generate Component"
+      },
+      {
+        "command": "rnManager.generateScreen",
+        "title": "RN: Generate Screen"
+      },
+      {
+        "command": "rnManager.openDashboard",
+        "title": "RN: Open Dashboard"
+      }
     ],
     "menus": {
       "explorer/context": [
@@ -61,13 +99,20 @@
       "properties": {
         "rnManager.packageManager": {
           "type": "string",
-          "enum": ["npm", "yarn", "bun"],
+          "enum": [
+            "npm",
+            "yarn",
+            "bun"
+          ],
           "default": "npm",
           "description": "Package manager to use"
         },
         "rnManager.defaultProjectType": {
           "type": "string",
-          "enum": ["expo", "cli"],
+          "enum": [
+            "expo",
+            "cli"
+          ],
           "default": "expo",
           "description": "Default project type when creating new projects"
         }
